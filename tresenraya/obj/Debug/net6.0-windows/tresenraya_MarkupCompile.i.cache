@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 \\NAS\Datos\Informatica\Proyectos\wpf\tresenraya\tresenraya\App.xaml
-11407045341
+11126060641
 
-72063014216
+9-116296694
 194618410957
-MainWindow.xaml;
+Views\TresEnRayaView.xaml;
 
 False
 

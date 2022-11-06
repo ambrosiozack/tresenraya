@@ -1,0 +1,40 @@
+﻿<Window x:Class="tresenraya.Views.TresEnRayaView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tresenraya.Views"
+        mc:Ignorable="d"
+        Title="TresEnRayaView" SizeToContent="WidthAndHeight">
+    <DockPanel LastChildFill="False">
+        <DockPanel DockPanel.Dock="Right" LastChildFill="False">
+            <Label DockPanel.Dock="Top" Content="{Binding MensajeTurno}" />
+            <Label DockPanel.Dock="Top" FontSize="30" Content="{Binding NombreJugador}" HorizontalAlignment="Center" />
+            <Button DockPanel.Dock="Bottom" Command="{Binding ReiniciarCommand}" Content="Reiniciar" />
+        </DockPanel>
+        <Border DockPanel.Dock="Left" BorderThickness="5" BorderBrush="Turquoise" 
+                HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid TextElement.FontSize="30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Content="{Binding ContenidoBoton[0]}" Command="{Binding PulsadoBotonCommand[0]}"/>
+                <Button Grid.Row="0" Grid.Column="1" Content="{Binding ContenidoBoton[1]}" Command="{Binding PulsadoBotonCommand[1]}"/>
+                <Button Grid.Row="0" Grid.Column="2" Content="{Binding ContenidoBoton[2]}" Command="{Binding PulsadoBotonCommand[2]}"/>
+                <Button Grid.Row="1" Grid.Column="0" Content="{Binding ContenidoBoton[3]}" Command="{Binding PulsadoBotonCommand[3]}"/>
+                <Button Grid.Row="1" Grid.Column="1" Content="{Binding ContenidoBoton[4]}" Command="{Binding PulsadoBotonCommand[4]}"/>
+                <Button Grid.Row="1" Grid.Column="2" Content="{Binding ContenidoBoton[5]}" Command="{Binding PulsadoBotonCommand[5]}"/>
+                <Button Grid.Row="2" Grid.Column="0" Content="{Binding ContenidoBoton[6]}" Command="{Binding PulsadoBotonCommand[6]}"/>
+                <Button Grid.Row="2" Grid.Column="1" Content="{Binding ContenidoBoton[7]}" Command="{Binding PulsadoBotonCommand[7]}"/>
+                <Button Grid.Row="2" Grid.Column="2" Content="{Binding ContenidoBoton[8]}" Command="{Binding PulsadoBotonCommand[8]}"/>
+            </Grid>
+        </Border>
+    </DockPanel>
+</Window>
